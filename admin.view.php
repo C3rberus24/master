@@ -29,17 +29,14 @@
                 <img class="icon" src="pictures/equipo.png">
                 <a href="/admin_socios/index.php" class="text-decoration-none">Socios</a>
             </div>
-
             <div class="contenedor" id="dos">
                 <img class="icon" src="pictures/dinero.png">
                 <a href="/admin_pagos/index.php" class="text-decoration-none">Pagos</a>
             </div>
-
             <div class="contenedor" style="background: white" id="cuatro">
-                <img class="icon" src="pictures/dinero.png">
+                <img class="icon" src="pictures/engranajes.png">
                 <a href="/diagnostico/index.php" class="text-decoration-none">Diagnóstico</a>
             </div>
-
             <div class="contenedor" style="background: #F18E33" id="tres">
                 <img class="icon" src="pictures/engranajes.png">
                 <a href="/configuraciones.php" class="text-decoration-none">Configuraciones</a>
