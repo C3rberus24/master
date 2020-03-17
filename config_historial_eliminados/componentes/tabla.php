@@ -20,7 +20,7 @@ Agregar nuevo
 </caption>-->
         </div>
         <hr class="mb-4">
-        <table class="table table-hover table-condensed table-bordered" id="tablaDinamicaLoad">
+        <table class="table table-hover table-condensed table-bordered" id="tabla_historial_eliminados">
 
             <thead class="thead-dark">
                 <tr>
@@ -70,7 +70,7 @@ Agregar nuevo
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#tablaDinamicaLoad').DataTable({
+        $('#tabla_historial_eliminados').DataTable({
             dom: 'Blfrtip',
             buttons: [
                 {

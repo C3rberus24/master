@@ -9,12 +9,24 @@
         <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
         <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
         <link rel="stylesheet" type="text/css" href="librerias/select2/css/select2.css">
+        <link rel="stylesheet" type="text/css" href="librerias/datatable/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="librerias/datatable/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="librerias/datatable/buttons/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="librerias/datatable/buttons/buttons.dataTables.min.css">
 
         <script src="librerias/jquery-3.2.1.min.js"></script>
         <script src="js/funciones.js"></script>
         <script src="librerias/bootstrap/js/bootstrap.js"></script>
         <script src="librerias/alertifyjs/alertify.js"></script>
         <script src="librerias/select2/js/select2.js"></script>
+        <script src="librerias/datatable/jquery.dataTables.min.js"></script>
+        <script src="librerias/datatable/dataTables.bootstrap4.min.js"></script>        
+        <script src="librerias/datatable/buttons/jquery.dataTables.min.js"></script>
+        <script src="librerias/datatable/buttons/dataTables.buttons.min.js"></script>
+        <script src="librerias/datatable/buttons/jszip.min.js"></script>
+        <script src="librerias/datatable/buttons/pdfmake.min.js"></script>
+        <script src="librerias/datatable/buttons/vfs_fonts.js"></script>
+        <script src="librerias/datatable/buttons/buttons.html5.min.js"></script>
 
         <style>
             .bd-placeholder-img {
@@ -93,6 +105,10 @@
                 </div>
             </nav>
         </header>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 order-md-0">
@@ -505,38 +521,37 @@
                         </div>
                         <hr class="mb-4">
                         <h2 class="mb-3">Información de la Empresa o Negocio</h2>
-                        <div class="col-md-5 mb-3">
-                            <label for="nomb_e">Nombre</label>
-                            <input type="text" class="form-control" id="nomb_e" readonly>
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="col-md-5 mb-3">
-                            <label for="dir_e">Dirección</label>
-                            <input type="text" class="form-control" id="dir_e" readonly>
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <label for="tel_e">Teléfono</label>
-                            <input type="text" class="form-control" id="tel_e" readonly>
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="email_e">Correo</label>
-                            <input type="email" class="form-control" id="email_e" readonly>
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="emp_e">Numero de Empleados</label>
-                            <input type="text   " class="form-control" id="emp_e" readonly>
-                            <div class="invalid-feedback"></div>
-                        </div>
                         <div class="row">
-
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="ing_e">Ingresos Mensuales</label>
-                            <input type="text" class="form-control" id="ing_e" readonly>
-                            <div class="invalid-feedback"></div>
+                            <div class="col-md-5 mb-3">
+                                <label for="nomb_e">Nombre</label>
+                                <input type="text" class="form-control" id="nomb_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <label for="dir_e">Dirección</label>
+                                <input type="text" class="form-control" id="dir_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="tel_e">Teléfono</label>
+                                <input type="text" class="form-control" id="tel_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="email_e">Correo</label>
+                                <input type="email" class="form-control" id="email_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="emp_e">Numero de Empleados</label>
+                                <input type="text   " class="form-control" id="emp_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="ing_e">Ingresos Mensuales</label>
+                                <input type="text" class="form-control" id="ing_e" readonly>
+                                <div class="invalid-feedback"></div>
+                            </div>
                         </div>
                         <!------------------------------------------------------------------------------------------------------------->
                     </form>
@@ -545,7 +560,6 @@
 
             <hr class="mb-4">
             <div class="container">
-                <div id="buscador"></div>
                 <div id="tabla"></div>
             </div>
 
@@ -574,7 +588,7 @@
                                 Agregar
                             </button>
 
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -607,7 +621,9 @@
                 </div>
             </div>
         </div>
-
+        <br>
+        <br>
+        <br>
         <footer class="footer mt-auto py-3">
             <div class="container text-center">
                 <span class="text-muted">&copy; ADEL Sonsonate.</span>
@@ -641,4 +657,8 @@
         });
 
     });
+    @media (min-width: 1200px)
+    .container {
+        width: 1170px;
+    }
 </script>

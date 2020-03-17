@@ -10,11 +10,11 @@ $conexion=conexion();
         <h2>Historial de pagos</h2>
         <hr class="mb-4">
         <caption>
-			<button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-				Agregar nuevo 
-				<span class="glyphicon glyphicon-plus"></span>
-			</button>
-		</caption>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
+                Agregar nuevo 
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </caption>
         <DIV><br></DIV>
         <table class="table table-hover table-condensed table-bordered">
             <thead class="thead-dark">
@@ -61,7 +61,6 @@ $conexion=conexion();
                 <td><?php echo $ver[4] ?></td>
                 <td>
                     <button class="btn btn-warning glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modalEdicion" onclick="agregaform('<?php echo $datos ?>')">
-
                     </button>
                 </td>
                 <td>
