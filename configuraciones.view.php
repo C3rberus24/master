@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Home</title>
+            <title>Configuraciones</title>
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/inicio.css">
@@ -15,32 +15,37 @@
     <body class="text-center">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
      <header class="masthead mb-auto">
-        <div class="inner">
-          <h1 class="masthead-brand">Bienvenid@ Admin</h1>
-            <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="/index.php">Salir</a>
-          </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mb-2">
+                     <div class="inner">
+                        <nav class="nav nav-masthead justify-content-center">
+                         <a class="nav-link active" href="/admin.view.php">Regresar</a>
+                      </nav>
+                    </div>
+                </div>
+                
+                    <div class="inner">
+                        <nav class="nav nav-masthead justify-content-center">
+                           <a class="nav-link active" href="/index.php">Salir</a>
+                        </nav>
+                    </div>
+                       
+            </div> 
         </div>
       </header>
 
         <div class="container justify-content-center">
             <div class="row">
-                <div class="contenedor" id="uno">
-                <img class="icon" src="pictures/equipo.png">
-                <a href="/socios/index.php" class="text-decoration-none">Socios</a>
-            </div>
-            <div class="contenedor" id="dos">
-                <img class="icon" src="pictures/dinero.png">
-                <a href="/pagos/index.php" class="text-decoration-none">Pagos</a>
-            </div>
-            <div class="contenedor" style="background: #F18E33" id="cuatro">
-                <img class="icon" src="pictures/apoyo.png">
-                <a href="/servicios/index.php" class="text-decoration-none">Servicios</a>
-            </div>
-            <div class="contenedor" style="background: #7F6461" id="tres">
-                <img class="icon" src="pictures/engranajes.png">
-                <a href="/configuraciones.view.php" class="text-decoration-none">Configuraciones</a>
-               </div>
+                <div class="contenedor" id="cuatro">
+                    <img class="icon" src="pictures/calendario.png">
+                    <a href="/historial.view.php" class="text-decoration-none">Historial</a>
+                </div>
+
+                <div class="contenedor" id="cinco">
+                    <img class="icon" src="pictures/usuario.png">
+                    <a href="/configuraciones/usuario/config_usuarios/index.php" class="text-decoration-none">Usuarios</a>
+                </div>
             </div>    
         </div>
             

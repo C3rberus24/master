@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Home</title>
+            <title>Historial</title>
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/inicio.css">
@@ -39,12 +39,12 @@
             <div class="row">
                 <div class="contenedor" id="uno">
                     <img class="icon" src="pictures/modificacion.png">
-                    <a href="/config_historial_mod/index.php" class="text-decoration-none">Modificaciones</a>
+                    <a href="configuraciones/historial/historial_modificados/index.php" class="text-decoration-none">Modificaciones</a>
                 </div>
 
                 <div class="contenedor" id="dos">
                     <img class="icon" src="pictures/eliminacion.png">
-                    <a href="/config_historial_eliminados/index.php" class="text-decoration-none">Eliminaciones</a>
+                    <a href="/configuraciones/historial/historial_eliminados/index.php" class="text-decoration-none">Eliminaciones</a>
                 </div>
             </div>    
         </div>

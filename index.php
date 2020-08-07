@@ -38,7 +38,7 @@
 
       <button type="submit" name="submit" class="btn btn-flat">Ingresar</button>
        <a href="/admin.view.php">Admin</a>
-        <a href="/usuario.view.php">User</a>
+<!--        <a href="/Nuser.view.php">User</a>-->
     </form>
 
 <!-- 
